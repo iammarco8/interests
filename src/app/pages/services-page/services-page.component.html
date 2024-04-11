@@ -1,0 +1,12 @@
+
+<div class="container-fluid">
+    <h1>Any Project requests?</h1>
+
+    <form class="input-group">
+        <span class="input-group-text">Enter request here</span>
+        <textarea class="form-control" name="requests" aria-label="With textarea" [(ngModel)]="requests" required></textarea>
+        <input type="submit" value="">
+    </form>
+
+    <div class="d-lg-none" *ngFor="let request of requests">{{request.info}}</div>
+</div>
