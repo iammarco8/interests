@@ -1,0 +1,19 @@
+<div class="container-fluid" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+
+    
+    <ul *ngFor="let interest of interests" style=" display: flex; flex-direction: row; flex-wrap: wrap; padding: 0; margin: auto;">
+<li>
+    <br><br>
+    <div class="container" >
+        <div class="card" style="width: 18rem; height:max-content">
+            <img src="{{interest.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2>{{ interest.name }}</h2>
+                <p class="card-text">{{interest.description}}</p>
+            </div>
+        </div>
+    </div>
+</li>
+<br><br>
+</ul>
+</div>

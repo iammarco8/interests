@@ -1,0 +1,13 @@
+
+<div class="container-fluid">
+
+    <h3>Are you Sure you want to contact me?</h3>    
+    <br><br><input type="button" value="Yes"(click)="showContact()" >
+    <br><br>
+    <input type="button" value="No" (click)="hideit()" >
+    <div [hidden]="!display">
+        {{phone}}
+        <br>
+        {{email}}
+    </div>
+</div>

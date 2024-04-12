@@ -1,0 +1,23 @@
+
+
+    <h1>Any Project requests?</h1>
+
+    <form (ngSubmit)="addrequest()" #requestForm="ngForm" class="input-group">
+        <span class="input-group-text">Enter request here</span>
+        <textarea class="form-control" id="requests" name="requests" aria-label="With textarea" [(ngModel)]="request.info" ></textarea>
+        <input type="submit" value="Enter">
+    </form>
+    <br><br><br><br>
+
+    <div class="" *ngFor="let request of requests">
+        <ul>
+            <li>
+                <p>
+                    {{request.info}}
+                </p>
+            </li>
+
+        </ul>
+    </div>
+
+<br><br><br><br>
